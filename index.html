@@ -10,41 +10,37 @@
          <meta name="'author" content="Theme Park">
          <meta name="keywords" content ="Studio Ghibli">
          <link rel="stylesheet" type="text/css" href="style.css">
-         
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     </head>
-
     <!-- Visible Information of the website -->
     <body>
-
-        <header>
-            <h1>Best Theme Park</h1>
-            <img src="photo1.jpg" width="100%" height="800px"/>
-            <p>opening hours: 10am - 10pm</p>
-            
-            <div class="blue">
-                <section class="newsbox" id="newsbox">
-                    <div class="wrap">
-                        <h2>
-                            <span class="bg">What's new</span>
-                        </h2>
-                        <ul>
-                            <li>Food</li>
-                            <li>Attractions</li>
-                            <li>Events</li>
-                        </ul>
-                    </div>
-                </section>
+        <header class="header">
+            <div class="nav__container">
+                <a class="nav__logo" href="#">LMFAO PARK</a>
+                <div class="nav__btn nav__burger" id="navBurger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="nav__menu" id="navMenu">
+                    <i class="fa fa-times fa-2x" id="navCross"></i>
+                    <ul class="nav__links">
+                        <li>
+                            <a class="nav__link" href="#">Tickets</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">Promotions</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">Who We Are</a>
+                        </li>
+                        <button class="nav__btn book">
+                            <a href="#" class="button">Book now</a>
+                        </button>
+                    </ul>
+                </div>
             </div>
-                
-        </header>
-
+        </header>    
     </body>
-
-
-
-
-
-
-
 </html>
