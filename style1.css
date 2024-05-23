@@ -1,0 +1,107 @@
+/*Centralise navlogo*/
+  .navlogo {
+    display: block;
+    margin-left:48.2%;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Navigation bar*/
+.navbar{
+    background-color: #ffffff;
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Dropdown container*/
+.dropdown {
+    float: left;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  
+/*Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 18px 35px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+    font-size: 30px;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(23, 140, 194);
+  }
+  
+/* Dropdown content*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+/* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #cddfec;
+  }
+  
+/* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*park map*/
+.parkmap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+.heading{
+
+    background-color: #f19eb3;
+    border-style: solid;
+    border-color: #f19eb3;
+}
+
+.attractions{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #f9f9f9;
+    padding-left: 200px;
+}
+
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color:black;
+    font-size: 15px;;
+    font-weight: bold;
+    
+}
+
+
