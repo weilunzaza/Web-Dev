@@ -16,23 +16,34 @@
     <!-- Visible Information of the website -->
      <!-- Main Page photo + blue background section -->
     <body>
-
-        <header>
-            <nav class="navbar">
-                <div class="navdiv">
-                    <div class="logo">
-                        <a href="#">BestThemePark</a>
-                    </div>
-                    <ul>
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">Tickets</a></li>
-                        <li><a href="#">Promotions</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <button><a href="#">SignIn</a></button>
-                        <button><a href="#">SignUp</a></button>
+        <header class="header">
+            <nav class="nav__container">
+                <a class="nav__logo" href="#">LMFAO PARK</a>
+                <div class="nav__btn nav__burger" id="navBurger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="nav__menu" id="navMenu">
+                    <i class="fa fa-times fa-2x" id="navCross"></i>
+                    <ul class="nav__links">
+                        <li>
+                            <a class="nav__link" href="#">Tickets</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">Promotions</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <button onclick ="windows.location.href='#'" class="nav__btn  SignIn">SignIn</button>
+                        </li>
                     </ul>
                 </div>
             </nav>
+        </header>
+        
             <img src="photo1.jpg" width="100%" height="800px"/>
             <p>opening hours: 10am - 10pm</p>
 
@@ -51,7 +62,7 @@
                 </section>
             </div>
 
-        </header>    
+  
 
     </body>
 
