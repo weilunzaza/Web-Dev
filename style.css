@@ -87,7 +87,7 @@ header {
 }
 
 .nav__links {
-    width: 500px;
+    width: 600px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
