@@ -1,8 +1,7 @@
 /*Centralise navlogo*/
   .navlogo {
     display: block;
-    margin-left:45.5%;
-    margin-right: auto;
+    margin-left:43%;
     width: 50%;
 }
 
@@ -81,7 +80,6 @@
 
 .heading{
     background-color: #f38856;
-    
     height: 80px;
     padding-top: 0.3px;
     margin-left: -30px;
@@ -92,7 +90,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     color: #f9f9f9;
-    padding-left: 43%;
+    padding-left: 39%;
     margin: 10px;
 }
 
@@ -103,6 +101,8 @@
     padding: 0;
     height: 40px;
 }
+
+
 
 li{
     list-style: none;
@@ -120,4 +120,14 @@ ul{
     padding-top: 7px;
 }
 
+.catalogue ul{
+  text-align: center;
+  
+}
+
+.catalogue a{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+}
 
