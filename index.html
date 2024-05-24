@@ -19,17 +19,18 @@
     <body>
         <header class="header">
             <nav class="nav__container">
-                <a class="nav__logo" href="#">LMFAO PARK</a>
-                <div class="nav__btn nav__burger" id="navBurger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                
+                <div class="nav__btn nav__burger" onclick="myFunction(this)" id="navBurger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
+                <a class="nav__logo"  href="index.html"><img src="assets/amusement park logo.png" width="100" height="100px"/> </a>
                 <div class="nav__menu" id="navMenu">
                     <i class="fa fa-times fa-2x" id="navCross"></i>
                     <ul class="nav__links">
                          <li>
-                            <a class="nav__link" href="attractions.html">About Us</a>
+                            <a class="nav__link" href="attractions.html">Attractions</a>
                         </li>
                         <li>
                             <a class="nav__link" href="ticketcart.html">Tickets</a>
@@ -47,10 +48,11 @@
                 </div>
             </nav>
         </header>
-        
+        <!-- This is for the image and opening hours-->
             <img src="photo1.jpg" width="100%" height="800px"/>
             <p>opening hours: 10am - 10pm</p>
 
+            <!-- This is for the news box-->
             <div class="blue">
                 <section class="newsbox" id="newsbox">
                     <div class="wrap">

@@ -1,3 +1,8 @@
+function myFunction(x){
+    x.classList.toggle("change");
+}
+
+
 function nav() {
     document.addEventListener('DOMContentLoaded', () => {
         const show = document.querySelector('.nav__burger');
@@ -16,3 +21,5 @@ function nav() {
 }
 
 nav();
+
+
