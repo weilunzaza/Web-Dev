@@ -1,5 +1,35 @@
 /*Box for the ticket*/
+.ticketBox {
+    position: relative;
+    padding: 20px;
+    border: 0;
+    width: 55%;
+    height: auto;
+    margin: 0;
+    background-color: #E1E4D9;
+    border-radius: 10px;
+}
+
+.ticketBox h2 {
+    margin-top: 0;
+}
+
+.ticketBox p {
+    margin-bottom: 5px;
+}
 
 /*To add on feature*/
+.quantity {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.quantity:hover {
+    background-color: E1E4D9;
+}
 
 /*Calender feature*/
