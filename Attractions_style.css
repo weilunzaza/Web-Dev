@@ -69,6 +69,7 @@
   display: block;
 }
 
+/*Attractions Heading banner*/
 .heading{
   background-color: #f36856;
   height: 80px;
@@ -77,6 +78,7 @@
   margin-right: -50px;
 }
 
+/*attractions heading font*/
 .heading p{
   font-family:'Franklin Gothic Medium', 'Arial Narrow';
   font-size: 40px;
@@ -85,15 +87,7 @@
   margin: 10px;
 }
 
-/*park map*/
-.parkmap {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10%;
-    
-}
-
+/*HOME/Attractions shortcut*/
 .shortcut{
   border-style: none;
   background-color: rgb(243, 243, 243);
@@ -101,36 +95,38 @@
   padding: 0;
   height: 40px;
 }
-
-
-
 li{
   list-style: none;
   display: inline-block;
 }
-
 li a{
-  
   color:black;
   font-size: 18px;;
   font-weight: bold;
-
 }
-
 ul{
   padding-top: 7px;
 }
 
+/*park map image*/
+.parkmap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+}
+
+/*catalogue shortcuts*/
 .catalogue ul{
   text-align: center;
 }
-
 .catalogue a{
   padding-left: 8px;
   padding-right: 8px;
   font-size: 12px;
 }
 
+/*Ride descriptions*/
 .description h3{
  background-color: #f36856;
  height: 32px;
@@ -145,17 +141,16 @@ ul{
  padding-left: 12%;
  padding-right: 12%;
  padding-top: 20px;
- font-family: Arial, sans-serif;
+ 
 }
 
-.description p{
+.description ul{
   font-size: 13px;
   margin: 0;
   padding: 0;
 }
 
-.images{
-  border-radius: 15px;
+.description li{
   display: inline-block;
-  vertical-align: top;
+  font-family: Arial, sans-serif;
 }
