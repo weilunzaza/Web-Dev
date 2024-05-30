@@ -133,7 +133,7 @@ ul{
  padding-left: 25px;
  border-radius: 10px;
  color: #ffffff;
- font-size: 18px;
+ 
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -153,7 +153,7 @@ ul{
 
 .description li{
   font-family: Arial, sans-serif;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .description li img{
@@ -161,5 +161,29 @@ ul{
   height: auto;
   padding-right: 20px;
   border-radius: 20px;
+}
+
+.foottext{
+  padding-top: 100px;
+}
+
+.foottext p{
+  color: rgb(204, 140, 121);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.footimages ul{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footimages img{
+  width: 40px;
+  height: 40px;
+  padding-right: 7px;
 }
 
