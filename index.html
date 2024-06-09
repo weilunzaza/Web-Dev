@@ -17,61 +17,102 @@
     <!-- Visible Information of the website -->
      <!-- Main Page photo + blue background section -->
     <body>
-        <header class="header">
-            <nav class="nav__container">
-                
-                <div class="nav__btn nav__burger" onclick="myFunction(this)" id="navBurger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <a class="nav__logo"  href="index.html"><img src="assets/amusement park logo.png" width="100" height="100px"/> </a>
-                <div class="nav__menu" id="navMenu">
-                    <i class="fa fa-times fa-2x" id="navCross"></i>
-                    <ul class="nav__links">
-                         <li>
-                            <a class="nav__link" href="attractions.html">Attractions</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="ticketcart.html">Tickets</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="#">Promotions</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <button onclick ="windows.location.href='#'" class="nav__btn  SignIn">SignIn</button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- This is for the image and opening hours-->
-            <img src="photo1.jpg" width="100%" height="800px"/>
-            <p>opening hours: 10am - 10pm</p>
-
-            <!-- This is for the news box-->
-            <div class="blue">
-                <section class="newsbox" id="newsbox">
-                    <div class="wrap">
-                        <h2>
-                            <span class="bg">What's new</span>
-                        </h2>
-                        <ul>
-                            <li>Food</li>
-                            <li>Attractions</li>
-                            <li>Events</li>
-                        </ul>
-                    </div>
-                </section>
+    <header class="header">
+        <nav class="nav__container">
+            <a class="nav__logo" href="#">LMFAO PARK</a>
+            <div class="nav__btn nav__burger" id="navBurger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-
-  
-
-    </body>
-
-
+            <div class="nav__menu" id="navMenu">
+                <i class="fa fa-times fa-2x" id="navCross"></i>
+                <ul class="nav__links">
+                    <li>
+                       <a class="nav__link" href="attractions.html">Attractions</a>
+                   </li>
+                   <li>
+                       <a class="nav__link" href="ticketcart.html">Tickets</a>
+                   </li>
+                   <li>
+                       <a class="nav__link" href="#">Promotions</a>
+                   </li>
+                   <li>
+                       <a class="nav__link" href="#">Contact Us</a>
+                   </li>
+                   <li>
+                       <button onclick ="windows.location.href='#'" class="nav__btn  SignIn">SignIn</button>
+                   </li>
+               </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="HomepageHero">
+        <section class="section__container">
+            <div class="layout--hero">
+                <h1 class="HomepageHero__header">Opening Hour: </h1>
+                <h2 class="HomepageHero__siteHeader"> 10am-10pms</h2>
+                <button class="button HomepageHero__button">Click Here to Buy Ticket</button>
+            </div>
+        </section>
+    </div>
+    <div class="HomepageUpdates">
+        <section class="section__container">
+            <div class="layout--updates">
+                <article class="HomepageUpdates__article">
+                    <h1 class="HomepageUpdatesArticle__header">What's New</h1>
+                    <ul class="HomepageUpdatesArticle__lists">
+                        <li class="HomepageUpdatesArticle__list">LOL Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, facere.</li>
+                        <li class="HomepageUpdatesArticle__list">ur Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facilis consequuntur deserunt dolore a ratione numquam cupiditate enim. Optio rerum veniam perspiciatis voluptatem unde atque minus minima consectetur quo molestias?</li>
+                        <li class="HomepageUpdatesArticle__list">mama Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minima quae placeat iusto iure odit?</li>
+                        <li class="HomepageUpdatesArticle__list">a Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolorum.</li>
+                        <li class="HomepageUpdatesArticle__list">hoe Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae et alias repellat obcaecati est nostrum dolores sint.</li>
+                    </ul>
+                </article>
+                <h1 class="HomepageUpdates__header">IT'S PLAYTIME</h1>
+            </div>
+        </section>
+    </div>
+    <div class="HomepageInfo">
+        <section class="section__container">
+            <div class="layout--info">
+                <div class="HomepageInfo__cardContainer">
+                    <a class="HomepageInfo__card" href="#">
+                        <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                        <div class="HomepageInfoCard__body">
+                            <h4 class="HomepageInfoCard__title">Attractions</h4>
+                        </div>
+                    </a>         
+                    <a class="HomepageInfo__card" href="#">
+                        <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                        <div class="HomepageInfoCard__body">
+                            <h4 class="HomepageInfoCard__title">Tickets</h4>
+                        </div>
+                    </a>
+                    <a class="HomepageInfo__card" href="#">
+                        <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                        <div class="HomepageInfoCard__body">
+                            <h4 class="HomepageInfoCard__title">Promotions</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="foottext">
+            <p>Location</p>
+            <p>FAQs</p>
+            <p>Helpdesk</p>
+        </div>     
+        <div class="footimages">
+            <ul>
+                <li><img src="assets/instagram logo.png" alt="instagram"></li>
+                <li><img src="assets/facebook logo.png" alt="facebook"></li>
+                <li><img src="assets/youtube logo.png" alt="youtube"></li>
+             </ul>
+        </div>
+    </footer>
+</body>
 </html>
 
