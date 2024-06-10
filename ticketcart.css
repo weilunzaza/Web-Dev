@@ -1,3 +1,44 @@
+/*Heading logo*/
+.navlogo {
+    display: block;
+    margin-left:42%;
+    width: 50%; 
+}
+
+/*Navigation bar*/
+.navbar{
+    background-color: #ffffff;
+  }
+  .navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*Dropdown container*/
+  .dropdown {
+    float: left;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+    
+  /*Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 35px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+    font-size: 30px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(23, 140, 194);
+}
+/*-------*/
 /*Box for the ticket*/
 .ticketBox {
     position: relative;

@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Best Theme Park in the World </title>
+        <title>Tickets</title>
         <meta charset="UTF-8">
-        <meta name="description" content="This is a website for people to find out more about our theme park and purchase their tickets accordingly.">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <meta name="'author" content="Theme Park">
-        <meta name="keywords" content ="Studio Ghibli">
         <link rel="stylesheet" type="text/css" href="ticketcart.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body style="background-color: #F9FAEF;">
         <header>
-            <h1>Tickets</h1>
+            <!--Dropdown box w links to other pages-->
+            <nav class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">≡</button>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="ticketcart.html">Tickets</a>
+                        <a href="attractions.html">Attractions</a>
+                        <a href="#">Shops</a>
+                    </div>
+                </div>
+            </nav>
         </header>
+        <div class="heading">
+            <p>
+                <img src="assets/ferriswheel.png" style="width:50px;height:45px;padding-right:0.5%;">
+                Tickets
+            </p>
+        </div>
         <section>
-            <!--Links to other pages-->
-            <div>
-                <a href="index.html">Home</a>
-                <a href="ticketcart.html">Tickets</a>
-                <a href="attractions.html">Attractions</a>
-                <a href="#">Shops</a>
-            </div>
             <!--Selection of date-->
             <h2> Calendar <input type="date"></h2>
+
+            <!--Types of ticket-->
             <div class="ticketBox">
                 <h2>Adult</h2>
                 <p>$30</p>
