@@ -38,7 +38,76 @@
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(23, 140, 194);
 }
-/*-------*/
+
+/* Dropdown content*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+  
+/*background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #cddfec;
+}
+
+*Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Attractions Heading banner*/
+.heading{
+  background-color: #f36856;
+  height: 80px;
+  padding-top: 0.3px;
+  margin-left: -30px;
+  margin-right: -50px;
+}
+
+/*attractions heading font*/
+.heading p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow';
+  font-size: 40px;
+  color: #f9f9f9;
+  padding-left: 38%;
+  margin: 10px;
+}
+
+/*HOME/Attractions shortcut*/
+.shortcut{
+  border-style: none;
+  background-color: rgb(243, 243, 243);
+  margin: -20px;
+  padding: 0;
+  height: 40px;
+}
+li{
+  list-style: none;
+  display: inline-block;
+}
+li a{
+  color:black;
+  font-size: 18px;;
+  font-weight: bold;
+}
+ul{
+  padding-top: 7px;
+}
+
 /*Box for the ticket*/
 .ticketBox {
     position: relative;
