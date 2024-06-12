@@ -70,7 +70,7 @@
   display: block;
 }
 
-/*Attractions Heading banner*/
+/*Tickets Heading banner*/
 .heading{
   background-color: #f36856;
   height: 80px;
@@ -79,7 +79,7 @@
   margin-right: -50px;
 }
 
-/*attractions heading font*/
+/*tickets heading font*/
 .heading p{
   font-family:'Franklin Gothic Medium', 'Arial Narrow';
   font-size: 40px;
@@ -88,7 +88,7 @@
   margin: 10px;
 }
 
-/*HOME/Attractions shortcut*/
+/*HOME/Tickets shortcut*/
 .shortcut{
   border-style: none;
   background-color: rgb(243, 243, 243);
@@ -122,8 +122,10 @@ ul{
 }
 
 .ticketBox h2 {
-    margin-top: 0;
+  font-family: "Libre Franklin", sans-serif;
+  margin-top: 0;
 }
+
 
 .ticketBox p {
     margin-bottom: 5px;
@@ -141,4 +143,56 @@ ul{
 
 .quantity:hover {
     background-color: #FF0000;
+}
+
+/*Order Summary*/
+.summaryBox {
+  position: absolute;
+  height: 320px;
+  left: 949px;
+  right: 96px;
+  top: 285px;
+  background: #EDEFE4;
+  border: 2px solid #E1E4D9;
+  border-radius: 10px;
+}
+
+.summaryBox h2 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.tixQuantity{
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 200;
+}
+
+.subtotal {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 200;
+}
+
+.discount {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 200;
+}
+
+.total {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+}
+
+/*Checkout button*/
+.checkoutBtn {
+  position: absolute;
+  height: 48px;
+  left: 24px;
+  right: 24px;
+  font-size: 25px;
+  background: #476730;
+  color: white;
+  border-radius: 25px;
+  border: none;
+
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
 }
