@@ -114,7 +114,7 @@ ul{
     position: relative;
     padding: 20px;
     border: 0;
-    width: 55%;
+    width: fit-content;
     height: auto;
     margin: 0;
     background-color: #E1E4D9;
@@ -147,11 +147,10 @@ ul{
 
 /*Order Summary*/
 .summaryBox {
-  position: absolute;
-  height: 320px;
-  left: 949px;
-  right: 96px;
-  top: 285px;
+  display: flex;
+  width:fit-content;
+  padding: 20px;
+  margin: 0;
   background: #EDEFE4;
   border: 2px solid #E1E4D9;
   border-radius: 10px;
@@ -159,6 +158,12 @@ ul{
 
 .summaryBox h2 {
   font-family: 'Libre Franklin', sans-serif;
+}
+
+.contents {
+  position: relative;
+
+  display: none;
 }
 
 .tixQuantity{
@@ -183,7 +188,7 @@ ul{
 
 /*Checkout button*/
 .checkoutBtn {
-  position: absolute;
+  position: relative;
   height: 48px;
   left: 24px;
   right: 24px;
