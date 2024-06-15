@@ -110,11 +110,8 @@ ul{
 }
 
 /*OVERALL in grid*/
-.grid-container {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  row-gap: 50px;
-  padding: 10px;
+.container {
+  box-sizing: border-box;
 }
 
 .col-1 {width: 8.33%;}
@@ -136,8 +133,6 @@ ul{
   border: 2px solid #E1E4D9;
   background-color: #E1E4D9;
   border-radius: 10px;
-
-  width: 25%;
 }
 
 .ticketBox h2 {
@@ -165,37 +160,32 @@ ul{
     background-color: #FF0000;
 }
 
-/*Order Summary*/
-.summaryBox {
-  padding: 20px;
-  margin: 0;
-  background: #EDEFE4;
-  border: 2px solid #E1E4D9;
-  border-radius: 10px;
-
-  width: 50%;
-  float: right;
+/*overall in grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  row-gap: 50px;
+  padding: 10px;
 }
 
 /*Order Summary*/
-/* .summaryBox {
-  display: flex;
-  width: 500px;
-  padding: 20px;
-  margin: 0;
+.summaryBox {
+  padding: 40px;
+  padding-bottom: 80px;
   background: #EDEFE4;
   border: 2px solid #E1E4D9;
   border-radius: 10px;
+  
+  float: inline-end;
+
+  grid-column-start: 2;
+
+  position: relative;
 }
 
 .summaryBox h2 {
   font-family: 'Libre Franklin', sans-serif;
-} */
-
-.contents {
-  position: relative;
-
-  display: none;
 }
 
 .tixQuantity{
@@ -220,8 +210,8 @@ ul{
 
 /*Checkout button*/
 .checkoutBtn {
-  position: relative;
-  height: 48px;
+  position: absolute;
+  height: 45px;
   left: 24px;
   right: 24px;
   font-size: 25px;

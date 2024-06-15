@@ -52,66 +52,10 @@
 
         <!--Types of ticket-->
         <section>
-            <div class="grid-container">
-                <div class="ticketBox">
-                    <h2>Adult</h2>
-                    <p>$30</p>
-                    <p>
-                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
-                        <input type="number" value="0" min="0">
-                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
-                    </p>
-                </div>
-                <div class="ticketBox">
-                    <h2>Child</h2>
-                    <p>$20</p>
-                    <p>
-                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
-                        <input type="number" value="0" min="0">
-                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
-                    </p>
-                </div>
-                <div class="ticketBox">
-                    <h2>Express Pass</h2>
-                    <p>$50</p>
-                    <p>
-                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
-                        <input type="number" value="0" min="0">
-                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
-                    </p>
-                </div>                    
-            </div>
-
-            <!--Check out summary box-->
-            <div class="summaryBox">
-                <h2>Checkout Summary</h2>
-                <div class="tixQuantity">
-                    Quantity
-                </div>
-                <div class="subtotal">
-                    Subtotal
-                </div>
-                <div class="discount">
-                    Discount
-                </div>
-                <div class="total">
-                    Total
-                </div>
-            </div>
-        </section>
-
-        <!-- <section>
-            <div class="grid-container">
-                <div class="summaryBox">
-                    
-                </div>
-            </div>
-        </section> -->
-
-
-        <!-- <section class="summaryBox">
-            <div class="content">
-                <h2>Checkout Summary</h2>
+            <div class="container">
+                <!--Check out summary box-->
+                <div class="summaryBox col-3">
+                    <h2>Checkout Summary</h2>
                     <div class="tixQuantity">
                         Quantity
                     </div>
@@ -124,17 +68,49 @@
                     <div class="total">
                         Total
                     </div>
-                
-                <!--NEED TO PLACE THE CHECKOUT BUTTON AT THE BOTTOM-->
-                <div>           
-                    <a href="https://google.com"> <!--NEED TO CREATE A NEW SUBPAGE FOR 'CHECKOUT'-->
-                        <button class="checkoutBtn">
-                            Check out →
-                        </button>
-                    </a>
+
+                    <!-- NEED TO PLACE THE CHECKOUT BUTTON AT THE BOTTOM -->
+                    <div>
+                        <a href="https://google.com"> 
+                            <button class="checkoutBtn">
+                                Check out →
+                            </button>
+                        </a>
+                    </div>
                 </div>
+
+                <!--Types of ticket-->
+                <div class="ticketBox col-3">
+                    <h2>Adult</h2>
+                    <p>$30</p>
+                    <p>
+                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <input type="number" value="0" min="0">
+                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                    </p>
+                </div>
+                <br>
+                <div class="ticketBox col-3">
+                    <h2>Child</h2>
+                    <p>$20</p>
+                    <p>
+                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <input type="number" value="0" min="0">
+                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                    </p>
+                </div>
+                <br>
+                <div class="ticketBox col-3">
+                    <h2>Express Pass</h2>
+                    <p>$50</p>
+                    <p>
+                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <input type="number" value="0" min="0">
+                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                    </p>
+                </div>                    
             </div>
-        </section> -->
+        </section>
 
         <!--Functions for the '-' & '+' buttons-->
         <script>
