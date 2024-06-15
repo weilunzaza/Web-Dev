@@ -1,10 +1,6 @@
-function myFunction(x){
-    x.classList.toggle("change");
-}
-
-
+document.addEventListener('DOMContentLoaded', () => {
 function nav() {
-    document.addEventListener('DOMContentLoaded', () => {
+    
         const show = document.querySelector('.nav__burger');
         const navMenu = document.querySelector('.nav__menu');
         const hide = document.querySelector('.fa-times');
@@ -17,9 +13,29 @@ function nav() {
         hide.addEventListener('click', () => {
             navMenu.classList.remove('active');
         });
-    });
+
 }
 
 nav();
 
+function observer(){
+    const cards = document.querySelectorAll('.HomepageInfo__card')
+    const updateHeader = document.querySelector('.HomepageUpdates__header')
+    const appear =  new IntersectionObserver(
+        observedItems => {
+            observedItems.forEach(observedItem =>{
+                observedItem.target.classList.toggle("appear", observedItem.isIntersecting)
+                if (observedItem.isIntersecting) appear.unobserve(observedItem.target)
+            });
+        },
+        {threshold:1}); 
+    cards.forEach(card => {
+        appear.observe(card)
+    });
+
+    appear.observe(updateHeader)
+}
+
+observer()
+});
 

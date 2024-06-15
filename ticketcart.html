@@ -1,54 +1,114 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Best Theme Park in the World </title>
+        <title>Tickets</title>
         <meta charset="UTF-8">
-        <meta name="description" content="This is a website for people to find out more about our theme park and purchase their tickets accordingly.">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <meta name="'author" content="Theme Park">
-        <meta name="keywords" content ="Studio Ghibli">
         <link rel="stylesheet" type="text/css" href="ticketcart.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
+
     <body style="background-color: #F9FAEF;">
         <header>
-            <h1>Tickets</h1>
+            <!--Dropdown box w links to other pages-->
+            <nav class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">≡</button>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="ticketcart.html">Tickets</a>
+                        <a href="attractions.html">Attractions</a>
+                        <a href="#">Shops</a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;">
+                </div>
+            </nav>
         </header>
+        
+        <!--heading 'template'-->
+        <div class="heading">
+            <p>
+                <img src="assets/ferriswheel.png" style="width:50px;height:45px;padding-right:0.5%;">
+                Tickets
+            </p>
+        </div>
+
+        <div class="shortcut">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                /
+                <li><a href="ticketcart.html">Tickets</a></li>
+            </ul>
+        </div>
+
+        <!--Selection of date-->
+        <div>
+            <h2> Calendar <input type="date"></h2>
+        </div>
+
+        <!--Types of ticket-->
         <section>
-            <div>
-                <a href="index.html">Home</a>
-                <a href="ticketcart.html">Tickets</a>
-                <a href="attractions.html">Attractions</a>
-                <a href="#">Shops</a>
-            </div>
-            <div class="ticketBox">
-                <h2>Adult</h2>
-                <p>$30</p>
-                <p>
-                    <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
-                    <input type="number" value="1" min="0">
-                    <span class="quantity" onclick="increaseQuantity(this)"> + </span>
-                </p>
-            </div>
-            &nbsp;
-            <div class="ticketBox">
-                <h2>Child</h2>
-                <p>$20</p>
-                <p>
-                    <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
-                    <input type="number" value="1" min="0">
-                    <span class="quantity" onclick="increaseQuantity(this)"> + </span>
-                </p>
-            </div>
-            &nbsp;
-            <div class="ticketBox">
-                <h2>Express Pass</h2>
-                <p>$50</p>
-                <p>
-                    <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
-                    <input type="number" value="1" min="0">
-                    <span class="quantity" onclick="increaseQuantity(this)"> + </span>
-                </p>
+            <div class="container">
+                <!--Check out summary box-->
+                <div class="summaryBox col-3">
+                    <h2>Checkout Summary</h2>
+                    <div class="tixQuantity">
+                        Quantity
+                    </div>
+                    <div class="subtotal">
+                        Subtotal
+                    </div>
+                    <div class="discount">
+                        Discount
+                    </div>
+                    <div class="total">
+                        Total
+                    </div>
+
+                    <!-- NEED TO PLACE THE CHECKOUT BUTTON AT THE BOTTOM -->
+                    <div>
+                        <a href="https://google.com"> 
+                            <button class="checkoutBtn">
+                                Check out →
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!--Types of ticket-->
+                <div class="ticketBox col-3">
+                    <h2>Adult</h2>
+                    <p>$30</p>
+                    <p>
+                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <input type="number" value="0" min="0">
+                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                    </p>
+                </div>
+                <br>
+                <div class="ticketBox col-3">
+                    <h2>Child</h2>
+                    <p>$20</p>
+                    <p>
+                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <input type="number" value="0" min="0">
+                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                    </p>
+                </div>
+                <br>
+                <div class="ticketBox col-3">
+                    <h2>Express Pass</h2>
+                    <p>$50</p>
+                    <p>
+                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <input type="number" value="0" min="0">
+                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                    </p>
+                </div>                    
             </div>
         </section>
 
