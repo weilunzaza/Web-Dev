@@ -14,17 +14,22 @@
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="java.js"></script>
     </head>
+
     <!-- Visible Information of the website -->
      <!-- Main Page photo + blue background section -->
     <body>
     <header class="header">
         <nav class="nav__container">
-            <a class="nav__logo" href="#">LMFAO PARK</a>
-            <div class="nav__btn nav__burger" id="navBurger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a href="#"><img src="assets/new logo.png" href="#" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
+           
             <div class="nav__menu" id="navMenu">
                 <i class="fa fa-times fa-2x" id="navCross"></i>
                 <ul class="nav__links">
@@ -35,13 +40,7 @@
                        <a class="nav__link" href="ticketcart.html">Tickets</a>
                    </li>
                    <li>
-                       <a class="nav__link" href="#">Promotions</a>
-                   </li>
-                   <li>
                        <a class="nav__link" href="#">Contact Us</a>
-                   </li>
-                   <li>
-                       <button onclick ="windows.location.href='#'" class="nav__btn  SignIn">SignIn</button>
                    </li>
                </ul>
             </div>
