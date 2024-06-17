@@ -110,11 +110,11 @@ ul{
 }
 
 /*OVERALL in grid*/
-.container {
+/* .container {
   box-sizing: border-box;
-}
+} */
 
-.col-1 {width: 8.33%;}
+/* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -125,7 +125,16 @@ ul{
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;} */
+
+/*overall in grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 50px;
+  padding: 10px;
+}
 
 /*Box for the ticket*/
 .ticketBox {
@@ -133,11 +142,25 @@ ul{
   border: 2px solid #E1E4D9;
   background-color: #E1E4D9;
   border-radius: 10px;
+
+  grid-column: 1;
 }
 
 .ticketBox h2 {
   font-family: "Libre Franklin", sans-serif;
   margin-top: 0;
+}
+
+#adult {
+  grid-row: 1/2;
+}
+
+#child {
+  grid-row: 2/3;
+}
+
+#express {
+  grid-row: 3/4;
 }
 
 .ticketBox::after {
@@ -160,18 +183,9 @@ ul{
     background-color: #FF0000;
 }
 
-/*overall in grid*/
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  row-gap: 50px;
-  padding: 10px;
-}
-
 /*Order Summary*/
 .summaryBox {
-  padding: 40px;
+  padding: 20px;
   padding-bottom: 80px;
   background: #EDEFE4;
   border: 2px solid #E1E4D9;
