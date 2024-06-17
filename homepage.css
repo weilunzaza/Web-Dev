@@ -18,10 +18,12 @@
     justify-content: space-between;
 }
 
+
 .logo a{
     font-size: 35px;
     font-weight: 600;
-    color: white;
+    color: black;
+    text-align: left;
 }
 
 .li{
@@ -96,7 +98,78 @@ button a{
     display: flex;
   }
 
- .whatsnew{
-    font-size: 50px;
+  h1{
+    text-align: center;
+  }
+
+ .newsbox{
+    display: flexbox;
+    padding: 2.4375em 0px;
+    /*background-color: #08B0BF;*/
+    background-color: beige;
+    color: black;
+    max-width: 1170px;
+    margin-inline: auto;
+    border-radius: 20px;
  }
 
+ .whatsnew{
+  font-size: 32px;
+  text-align: center;
+  
+ }
+
+ .whatsnew ul{
+  text-align: left;
+ }
+
+ .foottext{
+  padding-top: 100px;
+}
+
+.foottext p{
+  color: rgb(204, 140, 121);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.footimages ul{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footimages img{
+  width: 40px;
+  height: 40px;
+  padding-right: 7px;
+  padding-bottom: 30px;
+}
+
+#foot{
+  font-size: 10px;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
