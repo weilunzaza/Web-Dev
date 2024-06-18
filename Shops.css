@@ -1,0 +1,201 @@
+/*Centralise navlogo*/
+.navlogo {
+    display: block;
+    margin-left:42%;
+    width: 50%;
+  }
+  
+  /*Navigation bar*/
+  .navbar{
+    background-color: #ffffff;
+  }
+  .navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*Dropdown container*/
+  .dropdown {
+    float: left;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+    
+  /*Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 35px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+    font-size: 30px;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(23, 140, 194);
+  }
+    
+  /* Dropdown content*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+    
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+    
+  /*background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #cddfec;
+  }
+    
+  /*Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /*Attractions Heading banner*/
+  .heading{
+    background-color: #f36856;
+    height: 80px;
+    padding-top: 0.3px;
+    margin-left: -30px;
+    margin-right: -50px;
+  }
+  
+  /*attractions heading font*/
+  .heading p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 40px;
+    color: #f9f9f9;
+    padding-left: 38%;
+    margin: 10px;
+  }
+  
+  /*HOME/Attractions shortcut*/
+  .shortcut{
+    border-style: none;
+    background-color: rgb(243, 243, 243);
+    margin: -20px;
+    padding: 0;
+    height: 40px;
+  }
+  li{
+    list-style: none;
+    display: inline-block;
+  }
+  li a{
+    color:black;
+    font-size: 18px;;
+    font-weight: bold;
+  }
+  ul{
+    padding-top: 7px;
+  }
+  
+  /*park map image*/
+  .parkmap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+  }
+  
+  /*catalogue shortcuts*/
+  .catalogue ul{
+    text-align: center;
+  }
+  .catalogue a{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 16px;
+  }
+  
+  .catalogue{
+    padding-bottom: 30px;
+  }
+  
+  /*Ride descriptions*/
+  .description h3{
+   background-color: #f36856;
+   height: 32px;
+   padding-left: 25px;
+   border-radius: 10px;
+   color: #ffffff;
+   
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .description {
+   padding-left: 12%;
+   padding-right: 12%;
+   padding-top: 20px;
+   padding-bottom: 50px;
+  }
+  
+  .description ul{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .description li{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+  
+  .description li img{
+    max-width: 300px;
+    height: auto;
+    padding-right: 20px;
+    border-radius: 20px;
+  }
+  
+  .foottext{
+    padding-top: 100px;
+  }
+  
+  .foottext p{
+    color: rgb(204, 140, 121);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .footimages ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footimages img{
+    width: 40px;
+    height: 40px;
+    padding-right: 7px;
+    padding-bottom: 30px;
+  }
+  
+  #foot{
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  
