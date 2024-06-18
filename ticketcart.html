@@ -56,8 +56,9 @@
                 <!--Check out summary box-->
                 <div class="summaryBox">
                     <h2>Checkout Summary</h2>
-                    <div class="tixQuantity">
-                        Quantity
+                    <!--Quantity-->
+                    <div class="tixQuantity" id="adult">
+                        Quantity <input qty()>
                     </div>
                     <div class="subtotal">
                         Subtotal
@@ -84,9 +85,12 @@
                     <h2>Adult</h2>
                     <p>$30</p>
                     <p>
-                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <button oonclick="decreaseQuantity(this)" onclick="qty()"> - </button>
+
+                        <!-- <span class="minusAdd" onclick="decreaseQuantity(this)" onclick="qty()"> - </span>
                         <input type="number" value="0" min="0">
-                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                        **CANNOT USE INPUT, cause input will have a 
+                        <span class="minusAdd" onclick="increaseQuantity(this)"> + </span> -->
                     </p>
                 </div>
                 <br>
@@ -94,9 +98,9 @@
                     <h2>Child</h2>
                     <p>$20</p>
                     <p>
-                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <span class="minusAdd" onclick="decreaseQuantity(this)"> - </span>
                         <input type="number" value="0" min="0">
-                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                        <span class="minusAdd" onclick="increaseQuantity(this)"> + </span>
                     </p>
                 </div>
                 <br>
@@ -104,27 +108,34 @@
                     <h2>Express Pass</h2>
                     <p>$50</p>
                     <p>
-                        <span class="quantity" onclick="decreaseQuantity(this)"> - </span>
+                        <span class="minusAdd" onclick="decreaseQuantity(this)"> - </span>
                         <input type="number" value="0" min="0">
-                        <span class="quantity" onclick="increaseQuantity(this)"> + </span>
+                        <span class="minusAdd" onclick="increaseQuantity(this)"> + </span>
                     </p>
                 </div>                    
             </div>
         </section>
 
-        <!--Functions for the '-' & '+' buttons-->
         <script>
+            var adultTix;
+            var childTix;
+            var expressTix;
+
+            //Functions for the '-' & '+' ticket quantities
             function increaseQuantity(element)
             {
-                var input=element.parentElement.querySelector('input[type="number"]');
-                var value=parseInt(input.value,10);
-                //parseInt() - converts a string into an integer
-                input.value=isNaN(value)? 0:Math.max(value+1,0);
-                //NaN - not a number
-                //isNaN(value) - checks if the 'value' is NaN
-                //NaN=TRUE~continues Math.max()
-                //NaN=FALSE~returns 0
-                //Math.max() - returns 0 OR value+1
+                //Adult tix
+                document.getElementById()
+
+                // var input=element.parentElement.querySelector('input[type="number"]');
+                // var value=parseInt(input.value,10);
+                // //parseInt() - converts a string into an integer
+                // input.value=isNaN(value)? 0:Math.max(value+1,0);
+                // //NaN - not a number
+                // //isNaN(value) - checks if the 'value' is NaN
+                // //NaN=TRUE~continues Math.max()
+                // //NaN=FALSE~returns 0
+                // //Math.max() - returns 0 OR value+1
             }
             function decreaseQuantity(element)
             {
