@@ -82,9 +82,9 @@
                     <h2>Adult</h2>
                     <p>$30</p>
                     <p>
-                        <button onclick="decreaseQuantity('adult')"> - </button>
+                        <button class="minusAdd" onclick="decreaseQuantity('adult')"> - </button>
                         <span id="adultQuantity">0</span>
-                        <button onclick="increaseQuantity('adult')"> + </button>
+                        <button class="minusAdd" onclick="increaseQuantity('adult')"> + </button>
                         <!-- updates n changes accordingly to its 'id' -->
                     </p>
                 </div>
@@ -93,9 +93,9 @@
                     <h2>Child</h2>
                     <p>$20</p>
                     <p>
-                        <button onclick="decreaseQuantity('child')"> - </button>
+                        <button class="minusAdd" onclick="decreaseQuantity('child')"> - </button>
                         <span id="childQuantity">0</span>
-                        <button onclick="increaseQuantity('child')"> + </button>
+                        <button class="minusAdd" onclick="increaseQuantity('child')"> + </button>
                     </p>
                 </div>
                 <br>
@@ -103,9 +103,9 @@
                     <h2>Senior</h2>
                     <p>$25</p>
                     <p>
-                        <button onclick="decreaseQuantity('senior')"> - </button>
+                        <button class="minusAdd" onclick="decreaseQuantity('senior')"> - </button>
                         <span id="seniorQuantity">0</span>
-                        <button onclick="increaseQuantity('senior')"> + </button>
+                        <button class="minusAdd" onclick="increaseQuantity('senior')"> + </button>
                     </p>
                 </div>                    
             </div>
@@ -183,7 +183,6 @@
                     break;
                 }
 
-                //calling 'totalUpdate()' to sync changes made accordingly
                 totalUpdate();
             }
 
