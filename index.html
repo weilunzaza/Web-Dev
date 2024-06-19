@@ -20,40 +20,36 @@
     <body>
     <header class="header">
         <nav class="nav__container">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-              </div>
-              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            <a href="#"><img src="assets/new logo.png" href="#" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
-           
+            <a href="homepage.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
             <div class="nav__menu" id="navMenu">
                 <i class="fa fa-times fa-2x" id="navCross"></i>
                 <ul class="nav__links">
                     <li>
-                       <a class="nav__link" href="attractions.html">Attractions</a>
-                   </li>
-                   <li>
-                       <a class="nav__link" href="ticketcart.html">Tickets</a>
-                   </li>
-                   <li>
-                       <a class="nav__link" href="Shops.html">Shops</a>
-                   </li>
-               </ul>
+                        <a class="nav__link" href="attractions.html">Attractions</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="Shops.html">Shops</a>
+                    </li>
+                    <button>
+                        <a href="ticketcart.html">Tickets</a>
+                    </button>
+                </ul>
             </div>
         </nav>
     </header>
+
+
     <div class="HomepageHero">
-        <section class="section__container">
+        <div class="section__container">
             <div class="layout--hero">
-                <h1 class="HomepageHero__header">Opening Hour: </h1>
-                <h2 class="HomepageHero__siteHeader"> 10am-10pm</h2>
-                <button class="button HomepageHero__button">Click Here to Buy Ticket</button>
+                <img class="HomepageHero__bg" src="assets/homepage.jpg " alt="">
+                    <div class="HomepageHero__headerContainer">
+                        <h1 class="HomepageHero__header"> 
+                            Opening Hours: 10am - 10pm
+                        </h1>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
     <div class="HomepageUpdates">
         <section class="section__container">
@@ -98,19 +94,25 @@
             </div>
         </section>
     </div>
+
+    
     <footer>
         <div class="foottext">
             <p>Location</p>
             <p>FAQs</p>
             <p>Helpdesk</p>
         </div>     
+
         <div class="footimages">
             <ul>
-                <li><img src="assets/instagram logo.png" alt="instagram"></li>
-                <li><img src="assets/facebook logo.png" alt="facebook"></li>
-                <li><img src="assets/youtube logo.png" alt="youtube"></li>
+               <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+               <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+               <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
              </ul>
         </div>
+
+        <p id="foot">© 2024 AUMUSMENT PARK Co., Ltd. All Rights Reserved.</p>
+        <p id="foot">© 2024 Studio UoL</p>    
     </footer>
 </body>
 </html>

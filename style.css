@@ -33,38 +33,21 @@ header{
     background: yellow;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+  
+  button{
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
   }
   
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
+  
+  button a{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
   }
   
   @media screen and (max-height: 450px) {
@@ -118,7 +101,6 @@ header{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: black;
 }
 
 .nav__menu .fa-times{
@@ -135,10 +117,10 @@ header{
 
 .nav__link {
     text-decoration: none;
-    color: red;
     font-size: 17px;
     padding: 0 10px;
     font-weight: 600;
+    color: black;
 }
 
 .nav__link:hover {
@@ -207,11 +189,7 @@ header{
     position: relative;
     display: flex;
     margin: auto;
-    align-items: center;
     justify-content: center;
-    background-image:url(assets/photo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     container: inline-size; /* Declare the container with inline-size containment */
     transition: height 0.3s ease;
 }
@@ -233,30 +211,31 @@ header{
     }
 }
 
-.layout--hero{
-    width: fit-content;
-    height: 30%;;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 200px;
-    background-color: aquamarine;
+.HomepageHero__bg{
+    height: 90%;
+    width: 100%;
+    background-image:url(assets/homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
 }
+
+.HomepageHero__headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .HomepageHero__header{
     color: black;
-    font-size: clamp(45px,8cqi,80px);
+    font-size: clamp(45px,5cqi,60px);
 }
 
-.HomepageHero__siteHeader{
-    font-size: clamp(30px, 5cqi, 60px);
-    color: black;
-}
 
-.HomepageHero__button{
-    width: 200px;
-}
+
+
 @media screen and (max-width:600px) {
     .HomepageHero{
         height: 600px;
@@ -424,24 +403,56 @@ header{
 
 .foottext{
     padding-top: 100px;
-  }
-  
-  .foottext p{
+    }
+    
+    
+    .foottext p{
     color: rgb(204, 140, 121);
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-  }
-  
-  .footimages ul{
+    }
+    
+    
+    .footimages ul{
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
-  }
-  
-  .footimages img{
+    }
+    
+    
+    .footimages img{
     width: 40px;
     height: 40px;
     padding-right: 7px;
-  }
+    padding-bottom: 30px;
+    }
+    
+    
+    #foot{
+    font-size: 10px;
+    text-align: center;
+    }
+    
+    
+    .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    }
+    .fa-facebook {
+    background: #3B5998;
+    color: white;
+    }
+    .fa-instagram {
+    background: #125688;
+    color: white;
+    }
+    .fa-youtube {
+    background: #bb0000;
+    color: white;
+    }
