@@ -141,7 +141,7 @@ ul{
   grid-row: 2/3;
 }
 
-#express {
+#senior {
   grid-row: 3/4;
 }
 
@@ -185,16 +185,6 @@ ul{
 }
 
 .tixQuantity{
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 200;
-}
-
-.subtotal {
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 200;
-}
-
-.discount {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 200;
 }
