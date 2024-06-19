@@ -4,19 +4,32 @@
     -webkit-overflow-scrolling: smooth;
 }
 
+header{
+  position:sticky;
+  display: flex;
+    height: 80px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background:beige;
+}
 
 .navbar{
-    background:beige;
     font-family: calibri;
     padding-right: 15px;
     padding-left: 15px;
+    width: 100%;
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navdiv{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 
 .logo a{
@@ -26,9 +39,25 @@
     text-align: left;
 }
 
+.nav__links{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.nav__link{
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
 .li{
     list-style: none;
-    display: inline-block;
+ 
 }
 
 .li a{
@@ -50,7 +79,8 @@ button{
 button a{
     color:white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .sidenav {
@@ -84,7 +114,7 @@ button a{
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 50px; 
   }
   
   @media screen and (max-height: 450px) {
@@ -102,26 +132,226 @@ button a{
     text-align: center;
   }
 
- .newsbox{
-    display: flexbox;
-    padding: 2.4375em 0px;
-    /*background-color: #08B0BF;*/
-    background-color: beige;
-    color: black;
-    max-width: 1170px;
-    margin-inline: auto;
-    border-radius: 20px;
- }
+  .HomepageHero{
+    height: 800px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-image:url(assets/photo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    container: inline-size; /* Declare the container with inline-size containment */
+    transition: height 0.3s ease;
+}
 
- .whatsnew{
-  font-size: 32px;
+ .section__container{
+  height: 100%;
+  width:1200px ;
+  position: relative;
+  padding: 0 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+@media screen and (max-width:580px) {
+  .section__container{
+      padding: 0 15px;
+  }
+}
+
+.layout--hero{
+  width: fit-content;
+  height: 30%;;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+  background-color: aquamarine;
+}
+
+.HomepageHero__header{
+  color: black;
+  font-size: clamp(45px,8cqi,80px);
+}
+
+.HomepageHero__siteHeader{
+  font-size: clamp(30px, 5cqi, 60px);
+  color: black;
+}
+
+.HomepageHero__button{
+  width: 200px;
+}
+@media screen and (max-width:600px) {
+  .HomepageHero{
+      height: 600px;
+  }  
+}
+
+.HomepageUpdates{
+  height: 800px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  container: inline-size; /* Declare the container with inline-size containment */
+  transition: height 0.3s ease;
+}
+
+.layout--updates{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.HomepageUpdates__article{
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 80%;
+  padding: 20px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: green;
+}
+
+.HomepageUpdatesArticle__header{
+  font-size: clamp(30px,8cqi,50px);
+  align-self: center;
+}
+
+
+.HomepageUpdatesArticle__list{
+  font-size:clamp(20px,3cqi,29px) ;
+  margin-bottom: 20px;
+}
+
+.HomepageUpdates__header{
+  height: 20%;
+  font-size:clamp(70px,10cqi,120px);
+  color: white;
+  text-transform: uppercase;
   text-align: center;
-  
- }
+  -webkit-text-stroke:2px black;
+  text-shadow: 0 0 10px black;
+  transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in;
+  opacity: 0;
+}
 
- .whatsnew ul{
-  text-align: left;
- }
+.HomepageUpdates__header.appear{
+  opacity: 1;
+}
+
+.HomepageInfo {
+  height: 400px; /* Default height */
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  container: inline-size; /* Declare the container with inline-size containment */
+  transition: height 0.3s ease;
+}
+
+/* Layout styling */
+.layout--info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+  background-color: blanchedalmond;
+  width: 100%;
+}
+
+/* Card container styling */
+.HomepageInfo__cardContainer {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 32%);
+  gap: 10px; /* Add some gap between cards */
+}
+
+/* Card styling */
+.HomepageInfo__card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in;
+  transition: opacity 0.7s ease-in;
+  opacity: 0;
+}
+
+.HomepageInfo__card.appear{
+  opacity: 1;
+}
+
+.HomepageInfo__card:hover{
+  transform: translate(-5%, -5%);
+  height: 110%;
+  width: 110%;
+  opacity: 50%;
+  transition:opacity 0.25s ease ;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+}
+
+.HomepageInfoCard__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+.HomepageInfoCard__body {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 520px)  {
+  .HomepageInfo{
+      height: 1000px;
+  }
+  .HomepageInfo__cardContainer{
+      grid-template-columns:100%;
+      grid-template-rows: repeat(3, 32%);
+  }
+
+  .HomepageInfo__card{
+      width: 100%;
+  }
+}
 
  .foottext{
   padding-top: 100px;

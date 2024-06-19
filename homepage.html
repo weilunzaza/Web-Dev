@@ -19,40 +19,66 @@
     <body>
         <header>
             <nav class="navbar">
-                <div class="navdiv">
-                   <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Attractions</a>
-                        <a href="#">Shops</a>
-                        <a href="#">What's new</a>
-                        <a href="#">Contact Us</a>
-                    </div>
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-                    <a href="#"><img src="assets/new logo.png" href="#" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
-                    <div class="logo"><a href="#">Best Theme Park</a> </div>
-                        <ul>
-                            <button><a href="#">Tickets</a></button>
+                    <a href="homepage.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
+                        <ul class="nav__links">
+                            <li>
+                                <a class="nav__link" href="attractions.html">Attractions</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="Shops.html">Shops</a>
+                            </li>
+                            <button>
+                                <a href="ticketcart.html">Tickets</a>
+                            </button>
                         </ul>
-                </div>
             </nav>
-            <img src="assets/homepage.jpg" class="homepagephoto">
-            <h1> Opening Hours: 10am - 10pm</h1>
         </header>
 
-        <div class="News">
-            <section class="newsbox" id="newsbox">
-                <div class="whatsnew">
-                    <h2>
-                        <span style="color:blue; font-weight: bold; font-size: 50px;">What's New!</span>
-                    </h2>
-                    <ul>
-                        <li> TLOL Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, facere.</li>
-                        <li> ur Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facilis consequuntur deserunt dolore a ratione numquam cupiditate enim. Optio rerum veniam perspiciatis voluptatem unde atque minus minima consectetur quo molestias?</li>
-                        <li> a Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolorum</li>
-                    </ul>
-                </div> 
+        <img src="assets/homepage.jpg" class="homepagephoto">
+        <h1> Opening Hours: 10am - 10pm</h1>
+
+        <div class="HomepageUpdates">
+            <section class="section__container">
+                <div class="layout--updates">
+                    <article class="HomepageUpdates__article">
+                        <h1 class="HomepageUpdatesArticle__header">What's New</h1>
+                        <ul class="HomepageUpdatesArticle__lists">
+                            <li class="HomepageUpdatesArticle__list">LOL Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, facere.</li>
+                            <li class="HomepageUpdatesArticle__list">ur Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facilis consequuntur deserunt dolore a ratione numquam cupiditate enim. Optio rerum veniam perspiciatis voluptatem unde atque minus minima consectetur quo molestias?</li>
+                            <li class="HomepageUpdatesArticle__list">mama Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minima quae placeat iusto iure odit?</li>
+                            <li class="HomepageUpdatesArticle__list">a Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolorum.</li>
+                            <li class="HomepageUpdatesArticle__list">hoe Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae et alias repellat obcaecati est nostrum dolores sint.</li>
+                        </ul>
+                    </article>
+                    <h1 class="HomepageUpdates__header">IT'S PLAYTIME</h1>
+                </div>
+            </section>
+        </div>
+
+        <div class="HomepageInfo">
+            <section class="section__container">
+                <div class="layout--info">
+                    <div class="HomepageInfo__cardContainer">
+                        <a class="HomepageInfo__card" href="#">
+                            <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                            <div class="HomepageInfoCard__body">
+                                <h4 class="HomepageInfoCard__title">Attractions</h4>
+                            </div>
+                        </a>         
+                        <a class="HomepageInfo__card" href="#">
+                            <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                            <div class="HomepageInfoCard__body">
+                                <h4 class="HomepageInfoCard__title">Tickets</h4>
+                            </div>
+                        </a>
+                        <a class="HomepageInfo__card" href="#">
+                            <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                            <div class="HomepageInfoCard__body">
+                                <h4 class="HomepageInfoCard__title">Promotions</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </section>
         </div>
     
