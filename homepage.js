@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  /*function nav() {
+  function nav() {
       
           const show = document.querySelector('.nav__burger');
           const navMenu = document.querySelector('.nav__menu');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   }
   
-  nav(); */
+  nav(); 
   
   function observer(){
       const cards = document.querySelectorAll('.HomepageInfo__card')

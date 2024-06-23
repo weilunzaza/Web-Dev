@@ -12,7 +12,7 @@
          <meta name="keywords" content ="Studio Ghibli">
          <link rel="stylesheet" type="text/css" href="style.css">
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="java.js"></script>
+        <script src="homepage.js"></script>
     </head>
 
     <!-- Visible Information of the website -->
@@ -20,10 +20,19 @@
     <body>
     <header class="header">
         <nav class="nav__container">
-            <a href="homepage.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
+            <a href="index.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
+            <div class="nav__btn nav__burger" id="navBurger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
             <div class="nav__menu" id="navMenu">
                 <i class="fa fa-times fa-2x" id="navCross"></i>
                 <ul class="nav__links">
+                    <li>
+                        <a class="nav__link" href="index.html">Home</a>
+                    </li>
                     <li>
                         <a class="nav__link" href="attractions.html">Attractions</a>
                     </li>
@@ -40,16 +49,12 @@
 
 
     <div class="HomepageHero">
-        <div class="section__container">
-            <div class="layout--hero">
-                <img class="HomepageHero__bg" src="assets/homepage.jpg " alt="">
-                    <div class="HomepageHero__headerContainer">
-                        <h1 class="HomepageHero__header"> 
-                            Opening Hours: 10am - 10pm
-                        </h1>
-                </div>
+        <div class="HomepageHero__bg"> </div>
+             <div class="HomepageHero__headerContainer">
+                    <h1 class="HomepageHero__header"> 
+                        Opening Hours: 10am - 10pm
+                    </h1>
             </div>
-        </div>
     </div>
     <div class="HomepageUpdates">
         <section class="section__container">
@@ -64,7 +69,10 @@
                         <li class="HomepageUpdatesArticle__list">hoe Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae et alias repellat obcaecati est nostrum dolores sint.</li>
                     </ul>
                 </article>
-                <h1 class="HomepageUpdates__header">IT'S PLAYTIME</h1>
+
+                <div class="HomepageUpdates__headerContainer">
+                    <h1 class="HomepageUpdates__header">IT'S PLAYTIME</h1>
+                </div>
             </div>
         </section>
     </div>
@@ -73,19 +81,19 @@
             <div class="layout--info">
                 <div class="HomepageInfo__cardContainer">
                     <a class="HomepageInfo__card" href="#">
-                        <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                        <img class="HomepageInfoCard__image" src="assets/shop 0.jpg" alt="">
                         <div class="HomepageInfoCard__body">
                             <h4 class="HomepageInfoCard__title">Attractions</h4>
                         </div>
                     </a>         
                     <a class="HomepageInfo__card" href="#">
-                        <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                        <img class="HomepageInfoCard__image" src="assets/shop 1.jpg" alt="">
                         <div class="HomepageInfoCard__body">
                             <h4 class="HomepageInfoCard__title">Tickets</h4>
                         </div>
                     </a>
                     <a class="HomepageInfo__card" href="#">
-                        <img class="HomepageInfoCard__image" src="assets/photo1.jpg" alt="">
+                        <img class="HomepageInfoCard__image" src="assets/shop 2.jpg" alt="">
                         <div class="HomepageInfoCard__body">
                             <h4 class="HomepageInfoCard__title">Promotions</h4>
                         </div>
