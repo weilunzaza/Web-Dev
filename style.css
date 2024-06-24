@@ -1,8 +1,8 @@
 :root{
-    --darkerblue: #008DDA;
-    --lighterblue: #41C9E2;
-    --lightestblue: #ACE2E1;
-    --beige: #F7EEDD;
+    --darkerblue: #5babe3;
+    --lighterblue: #84c5f4;
+    --lightestblue: #f3d9a6;
+    --beige: #f4e1c1;
 }
 
 
@@ -43,7 +43,7 @@ header{
 
   
   button{
-    background-color: red;
+    background-color: rgb(189, 161, 133);
     margin-left: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -65,7 +65,7 @@ header{
 
 .nav__logo {
     font-size: 26px;
-    color: red;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     font-weight: 900;
 }
@@ -95,8 +95,6 @@ header{
     display: none;
     width: 54.5px;
 }
-
-
   
 .line {
     width: 17px;
@@ -128,7 +126,7 @@ header{
     font-size: 17px;
     padding: 0 10px;
     font-weight: 600;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .nav__link:hover {
@@ -150,9 +148,9 @@ header{
         border-radius: 2.25%;
         padding: 20px 40px 20px  40px;
         flex-direction: column;
-        background-color:blue;
+        background-color:rgb(85, 85, 183);
         opacity: 0;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.90 );
+        box-shadow: 0 8px 32px 0 rgba(79, 84, 155, 0.9);
         backdrop-filter: blur( 14px );
         transform: translateY(-110%);
         transition: opacity 0.15s ease-in, transform 0s ease-in;
@@ -270,7 +268,8 @@ header{
     background-size: cover;
     container: inline-size; /* Declare the container with inline-size containment */
     transition: height 0.3s ease;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+    padding: 10% 0% 0% 0% ;
 }
 
 .layout--updates{
@@ -284,7 +283,7 @@ header{
 
 .HomepageUpdates__article{
     width: 100%;
-    border: 5px solid black;
+    border: 5px solid rgb(176, 231, 254);
     border-radius: 20px;
     height: 80%;
     padding: 20px 10%;
@@ -297,14 +296,16 @@ header{
 .HomepageUpdatesArticle__header{
     font-size: clamp(30px,8cqi,50px);
     align-self: center;
-    font-family: pepmdx;
+    font-family: 'Kumbh Sans', sans-serif;
+    color:white;
 }
 
 
 .HomepageUpdatesArticle__list{
     font-size:clamp(20px,3cqi,29px) ;
     margin-bottom: 20px;
-    font-family: pepmdx;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: white;
 }
 
 /* .HomepageUpdates__header{
@@ -336,7 +337,7 @@ header{
     color: var(--lightestblue);
     text-transform: uppercase;
     text-align: center;
-    -webkit-text-stroke:2px black;
+    -webkit-text-stroke:2px rgb(220, 165, 98);
     text-shadow: 0 0 10px black;
     transition: opacity 0.7s ease-in-out;
     transition: opacity 0.7s ease-in;
@@ -379,7 +380,6 @@ header{
     justify-content: space-between;
     padding: 30px 0;
     align-items: center;
-   
     width: 100%;
 }
 
@@ -456,7 +456,7 @@ header{
     
     
     .foottext p{
-    color: rgb(204, 140, 121);
+    color: rgb(189, 161, 133);
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
