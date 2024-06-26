@@ -10,40 +10,34 @@
     </head>
 
     <body style="background-color: #F9FAEF;">
-        <header>
-            <!--Dropdown box w links to other pages-->
-            <nav class="navbar">
-                <div class="dropdown">
-                    <button class="dropbtn">≡</button>
-                    <i class="fa fa-caret-down"></i>
-                    <div class="dropdown-content">
-                        <a href="index.html">Home</a>
-                        <a href="ticketcart.html">Tickets</a>
-                        <a href="attractions.html">Attractions</a>
-                        <a href="#">Shops</a>
-                    </div>
+        <header class="header">
+            <nav class="nav__container">
+                <a href="index.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
+                <div class="nav__btn nav__burger" id="navBurger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
-                <div class="logo">
-                    <img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;">
+    
+                <div class="nav__menu" id="navMenu">
+                    <i class="fa fa-times fa-2x" id="navCross"></i>
+                    <ul class="nav__links">
+                        <li>
+                            <a class="nav__link" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="attractions.html">Attractions</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="Shops.html">Shops</a>
+                        </li>
+                        <button>
+                            <a href="ticketcart.html">Tickets</a>
+                        </button>
+                    </ul>
                 </div>
             </nav>
         </header>
-        
-        <!--heading 'template'-->
-        <div class="heading">
-            <p>
-                <img src="assets/ferriswheel.png" style="width:50px;height:45px;padding-right:0.5%;">
-                Tickets
-            </p>
-        </div>
-
-        <div class="shortcut">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                /
-                <li><a href="ticketcart.html">Tickets</a></li>
-            </ul>
-        </div>
 
         <!--Selection of date-->
         <div>
@@ -110,6 +104,25 @@
                 </div>                    
             </div>
         </section>
+
+        <footer>
+            <div class="foottext">
+                <p>Location</p>
+                <p>FAQs</p>
+                <p>Helpdesk</p>
+            </div>     
+    
+            <div class="footimages">
+                <ul>
+                   <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                   <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                   <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                 </ul>
+            </div>
+    
+            <p id="foot">© 2024 AUMUSMENT PARK Co., Ltd. All Rights Reserved.</p>
+            <p id="foot">© 2024 Studio UoL</p>
+        </footer>
 
         <script>
             var adultTix = 0;
