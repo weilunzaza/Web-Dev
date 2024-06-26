@@ -6,24 +6,33 @@
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-                <nav class="navbar">
-                    <div class="dropdown">
-                        <button class="dropbtn">≡</button>
-                        <i class="fa fa-caret-down"></i>
-                        <div class="dropdown-content">
-                        <a href="index.html">Home</a>
-                        <a href="ticketcart.html">Tickets</a>
-                        <a href="attractions.html">Attractions</a>
-                        <a href="#">Shops</a>
-                        </div>
-                    </div>
-                        <div class="logo">
-                            <img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;">
-                        </div>
-                        
-                    </div>
-                </nav>
+        <header class="header">
+            <nav class="nav__container">
+                <a href="index.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
+                <div class="nav__btn nav__burger" id="navBurger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+    
+                <div class="nav__menu" id="navMenu">
+                    <i class="fa fa-times fa-2x" id="navCross"></i>
+                    <ul class="nav__links">
+                        <li>
+                            <a class="nav__link" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="attractions.html">Attractions</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="Shops.html">Shops</a>
+                        </li>
+                        <button>
+                            <a href="ticketcart.html">Tickets</a>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
         </header>
         
         <div class="heading">
