@@ -6,29 +6,37 @@
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-                <nav class="navbar">
-                    <div class="dropdown">
-                        <button class="dropbtn">≡</button>
-                        <i class="fa fa-caret-down"></i>
-                        <div class="dropdown-content">
-                        <a href="index.html">Home</a>
-                        <a href="ticketcart.html">Tickets</a>
-                        <a href="attractions.html">Attractions</a>
-                        <a href="Shops.html">Shops</a>
-                        </div>
-                    </div>
-                        <div class="logo">
-                            <img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;">
-                        </div>
-                        
-                    </div>
-                </nav>
+        <header class="header">
+            <nav class="nav__container">
+                <a href="index.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
+                <div class="nav__btn nav__burger" id="navBurger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+    
+                <div class="nav__menu" id="navMenu">
+                    <i class="fa fa-times fa-2x" id="navCross"></i>
+                    <ul class="nav__links">
+                        <li>
+                            <a class="nav__link" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="attractions.html">Attractions</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="Shops.html">Shops</a>
+                        </li>
+                        <button>
+                            <a href="ticketcart.html">Tickets</a>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
         </header>
         
         <div class="heading">
             <p>
-                <img src="assets/ferriswheel.png" style="width:50px;height:45px;padding-right:0.5%;">
                 Shops
             </p>
         </div>
@@ -116,25 +124,23 @@
                     The cafeteria offers rice balls, some sweets, local Aichi products and more. There is a convenience store at the North Gate as well.</li>
             </ul>       
         </div>
-    </body>
-    <footer>
-        <div class="foottext">
-            <p>Location</p>
-            <p>FAQs</p>
-            <p>Helpdesk</p>
-        </div>     
+        <footer>
+            <div class="foottext">
+                <p>Location</p>
+                <p>FAQs</p>
+                <p>Helpdesk</p>
+            </div>     
 
-        <div class="footimages">
-            <ul>
-                <li><img src="assets/instagram logo.png"></li>
-                <li><img src="assets/facebook logo.png"></li>
-                <li><img src="assets/youtube logo.png"></li>
-             </ul>
-        </div>
+            <div class="footimages">
+                <ul>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                </ul>
+            </div>
 
-        <p id="foot">© 2024 AUMUSMENT PARK Co., Ltd. All Rights Reserved.</p>
-        <p id="foot">© 2024 Studio UoL</p>    
-
-        
-    </footer>
+            <p id="foot">© 2024 AUMUSMENT PARK Co., Ltd. All Rights Reserved.</p>
+            <p id="foot">© 2024 Studio UoL</p>    
+        </footer>
+     </body>
 </html>
