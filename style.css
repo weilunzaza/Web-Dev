@@ -13,7 +13,7 @@
     font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: smooth;
-    
+
 }
 
 header{
@@ -74,15 +74,13 @@ header{
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    height: 34px;
-    padding: 5px;
-    border-radius: 20px ;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 14px );
-    -webkit-backdrop-filter: blur( 14px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color: rgb(189, 161, 133);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
 }
+
 
 .nav__btn:hover{
     background: rgba( 255, 255, 255, 0.50 );
@@ -190,15 +188,16 @@ header{
 }    
 
 .HomepageHero{
-    height: 1000px;
+    height: 1200px;
     width: 100%;
     position: relative;
     display: flex;
     margin: auto;
-    justify-content: center;
     container: inline-size; /* Declare the container with inline-size containment */
     transition: height 0.3s ease;
     flex-direction: column;
+    justify-content: space-between;
+   
 }
 
 .section__container{
@@ -219,7 +218,7 @@ header{
 }
 
 .HomepageHero__bg{
-    height: 100%;
+    height: 80%;
     width: 100%;
     background-image:url(assets/homepage.jpg);
     background-repeat: no-repeat;
@@ -232,6 +231,7 @@ header{
 }
 
 .HomepageHero__headerContainer{
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,7 +240,7 @@ header{
 
 .HomepageHero__header{
     color: black;
-    font-size: clamp(25px,5cqi,50px);
+    font-size: clamp(25px,4cqi,40px);
 }
 
 
@@ -269,7 +269,7 @@ header{
     container: inline-size; /* Declare the container with inline-size containment */
     transition: height 0.3s ease;
     background-color: #ffffff;
-    padding: 10% 0% 0% 0% ;
+    /* padding: 10% 0% 0% 0% ; */
 }
 
 .layout--updates{
@@ -322,7 +322,7 @@ header{
 } */
 .HomepageUpdates__headerContainer{
     height: 20%;
-
+    padding-top: 15px;
     display: flex;
     align-items: center ;
     justify-content: center;
@@ -408,6 +408,7 @@ header{
     transition: opacity 0.7s ease-in;
     transition: opacity 0.7s ease-in;
     opacity: 0;
+    text-decoration: none;
 }
 
 .HomepageInfo__card.appear{
@@ -434,6 +435,10 @@ header{
     width: 100%;
     padding: 10px;
     text-align: center;
+}
+
+.HomepageInfoCard__title{
+    color: black;
 }
 
 @media screen and (max-width: 520px)  {
