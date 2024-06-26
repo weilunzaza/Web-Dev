@@ -277,17 +277,39 @@ button a{
 }
 
 /*Checkout button*/
-.checkoutBtn {
-  position: relative;
-  height: 45px;
-  left: 24px;
-  right: 24px;
-  font-size: 25px;
+.checkoutBtn__container{
+  /* height: 45px;
+  width: 100pxpx;
   background: #476730;
   color: white;
   border-radius: 25px;
+  display: flex;
+  justify-content: baseline;
+  border: none; */
+}
+
+.checkoutLink{
+  width: 30px ;
+  background-color: blue;
+}
+
+.checkoutBtn {
+  height: 45px;
+  width: 100pxpx;
+  background: #476730;
+  color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: baseline;
   border: none;
 
+  width: 100px;
+  height: 45px;
+  font-size: 25px;
+  background: red;
+  color: white;
+  border-radius: 25px;
+  border: none;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
 }
