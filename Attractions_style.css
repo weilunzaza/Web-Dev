@@ -246,8 +246,7 @@ ul{
   text-align: center;
 }
 .catalogue a{
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0px 8px 0px 8px;
   font-size: 16px;
 }
 
@@ -267,10 +266,7 @@ ul{
 }
 
 .description {
- padding-left: 12%;
- padding-right: 12%;
- padding-top: 20px;
- padding-bottom: 50px;
+ padding: 20px 12% 50px 12%;
 }
 
 .description ul{
@@ -317,8 +313,7 @@ ul{
   .footimages img{
   width: 40px;
   height: 40px;
-  padding-right: 7px;
-  padding-bottom: 30px;
+  padding: 0px 7px 30px 0px;
   }
   
   
