@@ -47,7 +47,7 @@ header{
   -webkit-overflow-scrolling: smooth;
 }
 
-button{
+.nav__menu button{
   background-color: rgb(189, 161, 133);
   margin-left: 10px;
   border-radius: 10px;
@@ -55,7 +55,7 @@ button{
   width: 90px;
 }
 
-button a{
+.nav__menu button a{
   color:white;
   font-weight: bold;
   font-size: 20px;
@@ -314,7 +314,7 @@ ul{
 /*Checkout button*/
 .checkoutBtn__container{
   /* height: 45px;
-  width: 100pxpx;
+  width: 100px;
   background: #476730;
   color: white;
   border-radius: 25px;
@@ -328,25 +328,24 @@ ul{
   background-color: blue;
 }
 
-.checkoutBtn {
-  height: 45px;
-  width: 100pxpx;
+.summaryBox button {
+  /* height: 45px; */
+  /* width: 80px; */
+
+  height: 48px;
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  margin: 5px;
+  
   background: #476730;
   color: white;
   border-radius: 25px;
-  display: flex;
-  justify-content: baseline;
   border: none;
 
-  width: 100px;
-  height: 45px;
   font-size: 25px;
-  background: red;
-  color: white;
-  border-radius: 25px;
-  border: none;
   font-family: 'Libre Franklin', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 /*Footer*/
