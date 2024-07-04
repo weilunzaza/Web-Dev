@@ -1,140 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Attractions</title>
-        <link rel="stylesheet" type="text/css" href="Attractions_style.css">
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header class="header">
-            <nav class="nav__container">
-                <a href="index.html"><img src="assets/new logo.png" alt="logo" class="navlogo" style="width:180px;height:92px;"></a>
-                <div class="nav__btn nav__burger" id="navBurger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-    
-                <div class="nav__menu" id="navMenu">
-                    <i class="fa fa-times fa-2x" id="navCross"></i>
-                    <ul class="nav__links">
-                        <li>
-                            <a class="nav__link" href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="attractions.html">Attractions</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="Shops.html">Shops</a>
-                        </li>
-                        <button>
-                            <a href="ticketcart.html">Tickets</a>
-                        </button>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        
-        <div class="heading">
-            <p>
-                Attractions
-            </p>
+
+<head>
+    <title>Attractions</title>
+    <link rel="stylesheet" type="text/css" href="Attractions_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav__container">
+            <a href="index.html"><img src="assets/new logo.png" alt="logo" class="navlogo"
+                    style="width:180px;height:92px;"></a>
+            <div class="nav__btn nav__burger" id="navBurger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <div class="nav__menu" id="navMenu">
+                <i class="fa fa-times fa-2x" id="navCross"></i>
+                <ul class="nav__links">
+                    <li>
+                        <a class="nav__link" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="attractions.html">Attractions</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="Shops.html">Shops</a>
+                    </li>
+                    <button class="nav__btn">
+                        <a href="ticketcart.html">Tickets</a>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div><img src="assets/themeparkmap.png" alt="park map" class="parkmap"
+            style="width:70%;height:70%;padding-bottom: 50px;"></div>
+
+    <div class="catalogue">
+        <ul>
+            <a href="#coaster">▼Rolling Coaster</a>
+            <a href="#carousel">▼Merry Go Carousel</a>
+            <a href="#viking">▼Viking Ahoy</a>
+        </ul>
+        <ul>
+            <a href="#ranch">▼Pony Ranch</a>
+            <a href="#lagoon">▼Water Lagoon</a>
+        </ul>
+    </div>
+
+    <div class="attractionsPageArticles">
+        <section class="section__container">
+            <div class="layout--article">
+                <article class="description" id="coaster">
+                    <header class="description__header">
+                        <img src="assets/sun_symbol.png"
+                            style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
+                        <h1 class="description__title">Rolling Coaster</h1>
+                    </header>
+                    <div class="description__bodyContainer">
+                        <img class="description__image" src="assets/rollingcoaster.jpg">
+                        <h1 class="description__text">Experience the ultimate adrenaline rush on Rolling Coaster, the
+                            roller
+                            coaster
+                            that defies gravity! Soar to dizzying heights, twist through exhilarating loops, and plummet
+                            at
+                            breathtaking speeds. Feel the wind in your hair and the thrill in your veins as you conquer
+                            every twist
+                            and turn. Are you ready to ride the storm? Rolling Coaster awaits!</h1>
+                    </div>
+                </article>
+
+                <article class="description" id="carousel">
+                    <header class="description__header">
+                        <img src="assets/sun_symbol.png"
+                            style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
+                        <h1 class="description__title">Merry Go Carousel</h1>
+                    </header>
+                    <div class="description__bodyContainer">
+                        <img class="description__image" src="assets/merrygocarousel.jpg">
+                        <h1 class="description__text">Step into a world of enchantment on the Merry Go Carousel, where
+                            timeless
+                            charm meets whimsical delight! Glide gracefully on beautifully crafted horses, with
+                            twinkling
+                            lights and
+                            cheerful music adding to the magic. Perfect for all ages, this classic ride promises smiles,
+                            laughter,
+                            and a sprinkle of nostalgia. Join us for a merry-go-round of pure joy!</h1>
+                    </div>
+                </article>
+
+                <article class="description" id="viking">
+                    <header class="description__header">
+                        <img src="assets/sun_symbol.png"
+                            style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
+                        <h1 class="description__title">Viking Ahoy!</h1>
+                    </header>
+                    <div class="description__bodyContainer">
+                        <img class="description__image" src="assets/vikingahoy.jpg">
+                        <h1 class="description__text">Set sail on Viking Ahoy, the swashbuckling adventure of a
+                            lifetime!
+                            Climb
+                            aboard our mighty Viking ship and brace yourself for exhilarating swings that soar to the
+                            sky
+                            and plunge
+                            to the sea. Feel the rush of the ocean breeze and the thrill of ancient seafaring as you
+                            conquer
+                            the
+                            waves. Adventure awaits on Viking Ahoy!</h1>
+                    </div>
+                </article>
+
+                <article class="description" id="ranch">
+                    <header class="description__header">
+                        <img src="assets/sun_symbol.png"
+                            style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
+                        <h1 class="description__title">Pony Ranch</h1>
+                    </header>
+                    <div class="description__bodyContainer">
+                        <img class="description__image" src="assets/ponyranch.jpg">
+                        <h1 class="description__text">Welcome to Pony Ranch, where enchanting adventures await! Meet our
+                            friendly
+                            ponies and embark on a delightful ride through picturesque trails. Perfect for young cowboys
+                            and
+                            cowgirls, this charming attraction offers hands-on experiences, gentle rides, and
+                            unforgettable
+                            memories. Saddle up and let the fun begin at Pony Ranch!</h1>
+                    </div>
+                </article>
+
+                <article class="description" id="lagoon">
+                    <header class="description__header">
+                        <img src="assets/sun_symbol.png"
+                            style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
+                        <h1 class="description__title">Water Lagoon</h1>
+                    </header>
+                    <div class="description__bodyContainer">
+                        <img class="description__image" src="assets/waterlagoon.jpg">
+                        <h1 class="description__text">Dive into fun at Water Lagoon, the ultimate splash-filled
+                            paradise!
+                            Enjoy
+                            thrilling slides, playful fountains, and relaxing pools in a vibrant, tropical oasis.
+                            Perfect
+                            for
+                            families and water lovers of all ages, Water Lagoon promises endless laughter, cool
+                            refreshment,
+                            and
+                            unforgettable aquatic adventures. Come make a splash at Water Lagoon!</h1>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="foottext">
+            <p>Location</p>
+            <p>FAQs</p>
+            <p>Helpdesk</p>
         </div>
 
-        <div class="shortcut">
+        <div class="footimages">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                /
-                <li><a href="attractions.html">Attractions</a></li>
-            </ul>
-        </div>
-
-        <div><img src="assets/themeparkmap.png" alt="park map" class="parkmap" style="width:70%;height:70%;padding-bottom: 50px;"></div>
-
-        <div class="catalogue">
-            <ul>
-                <a href="#coaster">▼Rolling Coaster</a>
-                <a href="#carousel">▼Merry Go Carousel</a>
-                <a href="#viking">▼Viking Ahoy</a>
-            </ul>
-            <ul>
-                <a href="#ranch">▼Pony Ranch</a>
-                <a href="#lagoon">▼Water Lagoon</a>
-            </ul>
-        </div>
-
-        <div class="description" id="coaster">
-            <h3>
-                <img src="assets/sun_symbol.png" style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
-                Rolling Coaster
-            </h3>
-            <ul>
-                <li><img  src="assets/rollingcoaster.jpg" ></li>
-                <li>Experience the ultimate adrenaline rush on Rolling Coaster, the roller coaster that defies gravity! Soar to dizzying heights, twist through exhilarating loops, and plummet at breathtaking speeds. Feel the wind in your hair and the thrill in your veins as you conquer every twist and turn. Are you ready to ride the storm? Rolling Coaster awaits!</li>
-            </ul>   
-        </div>
-
-        <div class="description" id="carousel">
-            <h3>
-                <img src="assets/sun_symbol.png" style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
-                Merry Go Carousel
-            </h3>
-            <ul>
-                <li><img  src="assets/merrygocarousel.jpg" ></li>
-                <li>Step into a world of enchantment on the Merry Go Carousel, where timeless charm meets whimsical delight! Glide gracefully on beautifully crafted horses, with twinkling lights and cheerful music adding to the magic. Perfect for all ages, this classic ride promises smiles, laughter, and a sprinkle of nostalgia. Join us for a merry-go-round of pure joy!</li>
-            </ul>               
-        </div>
-
-        <div class="description" id="viking">        
-            <h3>
-                <img src="assets/sun_symbol.png" style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
-                Viking Ahoy!
-            </h3>
-            <ul>
-                <li><img src="assets/vikingahoy.jpg"></li>
-                <li>Set sail on Viking Ahoy, the swashbuckling adventure of a lifetime! Climb aboard our mighty Viking ship and brace yourself for exhilarating swings that soar to the sky and plunge to the sea. Feel the rush of the ocean breeze and the thrill of ancient seafaring as you conquer the waves. Adventure awaits on Viking Ahoy!</li>
-            </ul>
-        </div>
-
-        <div class="description" id="ranch">        
-            <h3>
-                <img src="assets/sun_symbol.png" style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
-                Pony Ranch
-            </h3>
-            <ul>
-                <li><img  src="assets/ponyranch.jpg"></li>
-                <li>Welcome to Pony Ranch, where enchanting adventures await! Meet our friendly ponies and embark on a delightful ride through picturesque trails. Perfect for young cowboys and cowgirls, this charming attraction offers hands-on experiences, gentle rides, and unforgettable memories. Saddle up and let the fun begin at Pony Ranch!</li>
-            </ul> 
-        </div>
-
-        <div class="description" id="lagoon">        
-            <h3>
-                <img src="assets/sun_symbol.png" style="width:20px; height:20px; padding-top: 2px; padding-right: 3px;">
-                Water Lagoon
-            </h3>
-            <ul>   
-                <li><img  src="assets/waterlagoon.jpg"></li>
-                <li>Dive into fun at Water Lagoon, the ultimate splash-filled paradise! Enjoy thrilling slides, playful fountains, and relaxing pools in a vibrant, tropical oasis. Perfect for families and water lovers of all ages, Water Lagoon promises endless laughter, cool refreshment, and unforgettable aquatic adventures. Come make a splash at Water Lagoon!</li>
-            </ul>       
-        </div>
-   
-        <footer>
-            <div class="foottext">
-                <p>Location</p>
-                <p>FAQs</p>
-                <p>Helpdesk</p>
-            </div>     
-
-            <div class="footimages">
-                <ul>
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                 <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                 <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-                </ul>
-            </div>
+            </ul>
+        </div>
 
-            <p id="foot">© 2024 AUMUSMENT PARK Co., Ltd. All Rights Reserved.</p>
-            <p id="foot">© 2024 Studio UoL</p>    
-        </footer>
-     </body>
+        <p id="foot">© 2024 AUMUSMENT PARK Co., Ltd. All Rights Reserved.</p>
+        <p id="foot">© 2024 Studio UoL</p>
+    </footer>
+</body>
+
 </html>
