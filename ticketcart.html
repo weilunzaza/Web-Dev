@@ -77,7 +77,7 @@
 
                     <!-- NEED TO PLACE THE CHECKOUT BUTTON AT THE BOTTOM -->
                     <div>
-                        <button onclick= "window.location.href= 'https://google.com'">
+                        <button onclick= "successful()">
                             Check out →
                         </button>
                     </div>
@@ -137,6 +137,11 @@
         </footer>
 
         <script>
+            function successful()
+            {
+                alert("Ticket Purchase Successful! Have a nice day! :)");
+            }
+
             var adultTix = 0;
             var childTix = 0;
             var seniorTix = 0;
