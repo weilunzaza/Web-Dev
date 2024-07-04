@@ -1,20 +1,13 @@
-/*Centralise navlogo*/
-.navlogo {
-  display: block;
-  margin-left:42%;
-  width: 50%;
-}
-
-/*Navigation bar*/
 :root{
   --darkerblue: #5babe3;
   --lighterblue: #84c5f4;
   --lightestblue: #f3d9a6;
   --beige: #f4e1c1;
-  --orange:  #e29059;
+  --red:  #f97b5e;
+  --brown: rgb(189, 161, 133);
 }
 
-
+/*Navigation bar*/
 *{
   box-sizing: border-box;
   margin: 0;
@@ -22,10 +15,10 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: smooth;
-  
+
 }
 
-header{
+.header{
   display: flex;
   height: 80px;
   margin: auto;
@@ -50,26 +43,11 @@ header{
   padding: 0 35px;
 }
 
-
-button{
-  background-color: rgb(189, 161, 133);
-  margin-left: 10px;
-  border-radius: 10px;
-  padding: 10px;
-  width: 90px;
-}
-
-
 button a{
   color:white;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 .nav__logo {
@@ -83,15 +61,13 @@ button a{
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  height: 34px;
-  padding: 5px;
-  border-radius: 20px ;
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 14px );
-  -webkit-backdrop-filter: blur( 14px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color: var(--brown);
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90px;
 }
+
 
 .nav__btn:hover{
   background: rgba( 255, 255, 255, 0.50 );
@@ -198,149 +174,166 @@ button a{
   opacity: 0.97;
 }    
 
-  /*Attractions Heading banner*/
-.heading{
-  background-color: var(--orange);
-  height: 80px;
-  padding-top: 15px;
+/*park map image*/
+.parkmap {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
 }
 
-/*attractions heading font*/
-.heading p{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow';
-  font-size: 40px;
-  color: #f9f9f9;
+/*catalogue shortcuts*/
+.catalogue ul{
   text-align: center;
 }
+.catalogue a{
+  padding: 0px 8px 0px 8px;
+  font-size: 16px;
+}
+
+.catalogue{
+  padding-bottom: 30px;
+}
+
+/*Ride descriptions*/
+.description__header{
+ background-color: var(--red);
+ height: 32px;
+ padding-left: 25px;
+ border-radius: 10px;
+ color: #ffffff;
+ font-family: 'Kumbh Sans', sans-serif;
+ display: flex;
+ justify-content: baseline;
+ align-items: center;
+}
+
+.attractionsPageArticles{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__container{
+  height: 100%;
+  width:1200px ;
+  position: relative;
+  padding: 0 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.layout--article{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.description {
+ padding: 20px 0 50px 0;
+}
+
+.description__bodyContainer{
+  font-size: 13px;
+  margin: 0;
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__image{
+  max-width: 300px;
+  height: auto;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+
+.description__text{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+}
+
+.foottext{
+  padding-top: 100px;
+}
   
-  /*HOME/Attractions shortcut*/
-  .shortcut{
-    border-style: none;
-    background-color: rgb(243, 243, 243);
-    padding-left: 3%;
-    height: 40px;
+@media screen and (max-width:580px) {
+  .section__container{
+      padding: 0 15px;
   }
-  li{
-    list-style: none;
-    display: inline-block;
+
+  .description__bodyContainer{
+    flex-direction: column;
   }
-  li a{
-    color:black;
-    font-size: 18px;;
-    font-weight: bold;
-  }
-  ul{
-    padding-top: 7px;
-  }
-  
-  /*catalogue shortcuts*/
-  .catalogue ul{
-    text-align: center;
-    padding-top: ;
-  }
-  .catalogue a{
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 16px;
-  }
-  
-  .catalogue{
-    padding-bottom: 5%;
-    padding-top: 7%;
-  }
-  
-  /*Ride descriptions*/
-  .description h3{
-   background-color: var(--orange);
-   height: 32px;
-   padding-left: 25px;
-   border-radius: 10px;
-   color: #ffffff;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  .description {
-   padding-left: 12%;
-   padding-right: 12%;
-   padding-top: 20px;
-   padding-bottom: 50px;
-  }
-  
-  .description ul{
-    font-size: 13px;
-    margin: 0;
-    padding-top: 2%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .description li{
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-  }
-  
-  .description li img{
-    max-width: 300px;
-    height: auto;
-    padding-right: 20px;
-    border-radius: 20px;
-  }
-  
-  .foottext{
-    padding-top: 100px;
-    }
-    
-    
-    .foottext p{
-    color: rgb(189, 161, 133);
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    }
-    
-    
-    .footimages ul{
-    display: flex;
-    justify-content: center;
-    margin: 0;
+
+  .description__image{
+    max-width:100% ;
     padding: 0;
-    }
-    
-    
-    .footimages img{
-    width: 40px;
-    height: 40px;
-    padding-right: 7px;
-    padding-bottom: 30px;
-    }
-    
-    
-    #foot{
-    font-size: 10px;
-    text-align: center;
-    }
-    
-    
-    .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    }
-    .fa-facebook {
-    background: #3B5998;
-    color: white;
-    }
-    .fa-instagram {
-    background: #125688;
-    color: white;
-    }
-    .fa-youtube {
-    background: #bb0000;
-    color: white;
-    }
+  }
+  .description__text{
+    padding-top: 20px;
+  }
+}
 
   
+.foottext p{
+color: rgb(189, 161, 133);
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+}
   
+  
+.footimages ul{
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
+}
+  
+  
+.footimages img{
+width: 40px;
+height: 40px;
+padding: 0px 7px 30px 0px;
+}
+
+  
+#foot{
+font-size: 10px;
+text-align: center;
+}
+  
+  
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+
+.fa-facebook {
+background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
