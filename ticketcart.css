@@ -176,21 +176,25 @@
   opacity: 0.97;
 }
 
-/*Ticket cart Heading banner*/
-.heading {
-  background-color: var(--red);
-  height: 80px;
-  padding-top: 15px;
+/*HOME/Ticket Cart shortcut*/
+.shortcut{
+  border-style: none;
+  background-color: rgb(243, 243, 243);
+  padding-left: 3%;
+  height: 40px;
 }
-
-/*ticket cart heading font*/
-.heading p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-  font-size: 40px;
-  color: #f9f9f9;
-  text-align: center;
+li{
+  list-style: none;
+  display: inline-block;
 }
-
+li a{
+  color:black;
+  font-size: 18px;;
+  font-weight: bold;
+}
+ul{
+  padding-top: 7px;
+}
 
 /*overall in grid*/
 .grid-container {

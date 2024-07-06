@@ -68,7 +68,6 @@ button a {
   width: 90px;
 }
 
-
 .nav__btn:hover {
   background: rgba(255, 255, 255, 0.50);
 }
@@ -165,13 +164,32 @@ button a {
     font-weight: 600;
     font-size: 20px;
   }
-
 }
 
 .nav__menu.active {
   display: flex;
   transform: translateY(0);
   opacity: 0.97;
+}
+
+/*HOME/Ticket Cart shortcut*/
+.shortcut{
+  border-style: none;
+  background-color: rgb(243, 243, 243);
+  padding-left: 3%;
+  height: 40px;
+}
+li{
+  list-style: none;
+  display: inline-block;
+}
+li a{
+  color:black;
+  font-size: 18px;;
+  font-weight: bold;
+}
+ul{
+  padding-top: 7px;
 }
 
 /*park map image*/
